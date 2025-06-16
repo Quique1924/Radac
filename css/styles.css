@@ -341,6 +341,10 @@ the website, in dark theme
     justify-self: center;
 }
 
+img.home__img {}
+
+img.home__img {}
+
 .home__title {
     font-size: var(--big-font-size);
     line-height: 140%;
