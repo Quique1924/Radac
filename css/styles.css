@@ -500,15 +500,20 @@ img.home__img {}
     border-radius: 1rem;
 }
 
+.steps__card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    /* centra horizontalmente */
+}
+
 .steps__card-number {
-    display: inline-block;
-    background-color: var(--first-color-alt);
-    color: #FFF;
-    padding: .5rem .75rem;
-    border-radius: .25rem;
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-1-5);
-    transition: .3s;
+    background-color: #2f4f4f;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
 }
 
 .steps__card-title {
