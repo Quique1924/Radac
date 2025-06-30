@@ -416,6 +416,14 @@ img.home__img {}
     transform: translateX(.25rem);
 }
 
+@media screen and (max-width: 767px) {
+    .home__title {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 /*=============== BUTTONS ===============*/
 
@@ -492,6 +500,14 @@ img.home__img {}
     font-size: 1rem;
     color: var(--first-color);
     margin-top: .15rem;
+}
+
+@media screen and (max-width: 767px) {
+    .about__title {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -814,6 +830,12 @@ img.home__img {}
     z-index: 10;
 }
 
+@media screen and (max-width: 767px) {
+    .contact__box .section__title {
+        text-align: center;
+    }
+}
+
 
 /*=============== FOOTER ===============*/
 
@@ -893,13 +915,18 @@ img.home__img {}
 }
 
 .footer__cards {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: .5rem;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .footer__card {
-    width: 35px;
+    display: block;
+    max-width: 90%;
+    height: auto;
 }
 
 .footer__copy {
@@ -907,6 +934,24 @@ img.home__img {}
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin: 5rem 0 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .footer__content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__data,
+    .footer__social,
+    .footer__cards {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .footer__data li,
+    .footer__social-link {
+        display: inline-block;
+    }
 }
 
 
