@@ -214,16 +214,15 @@ the website, in dark theme
 .whatsapp-float {
     position: fixed;
     bottom: 50px;
-    right: 100px;
-    z-index: 99999;
-    /* asegúrate de que esté encima de todo */
+    right: 15px;
+    z-index: 2147483647;
+    /* máximo valor posible */
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     pointer-events: auto;
-    /* asegura que reciba clics */
 }
 
 .whatsapp-float img.whatsapp-icon {
@@ -231,11 +230,6 @@ the website, in dark theme
     height: 100%;
     display: block;
     pointer-events: auto;
-}
-
-.whatsapp-float {
-    background-color: rgba(255, 0, 0, 0.2);
-    /* TEMPORAL para ver el área clicable */
 }
 
 
