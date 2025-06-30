@@ -215,24 +215,27 @@ the website, in dark theme
     position: fixed;
     bottom: 50px;
     right: 15px;
-    z-index: 999;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    /* 👇 Asegura que el área clicable coincida con el ícono */
+    z-index: 99999;
+    /* asegúrate de que esté encima de todo */
     width: 80px;
     height: 80px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    /* asegura que reciba clics */
 }
 
-.whatsapp-float:hover {
-    transform: scale(1);
-}
-
-.whatsapp-icon {
+.whatsapp-float img.whatsapp-icon {
     width: 100%;
     height: 100%;
     display: block;
-    /* Elimina espacio extra alrededor */
+    pointer-events: auto;
+}
+
+.whatsapp-float {
+    background-color: rgba(255, 0, 0, 0.2);
+    /* TEMPORAL para ver el área clicable */
 }
 
 
