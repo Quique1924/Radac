@@ -225,11 +225,8 @@ the website, in dark theme
 }
 
 .whatsapp-icon {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: none !important;
-    max-height: none !important;
-    display: block;
+    width: 100px;
+    height: 150px;
 }
 
 
