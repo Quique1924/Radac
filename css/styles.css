@@ -221,7 +221,7 @@ the website, in dark theme
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .whatsapp-icon {
@@ -831,7 +831,19 @@ img.home__img {}
 }
 
 @media screen and (max-width: 767px) {
+    /* Centrar el título en móviles */
     .contact__box .section__title {
+        text-align: center;
+    }
+    /* Centrar los labels del formulario */
+    .contact__label {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+    /* Ajuste para inputs si hace falta que no empujen el label */
+    .contact__content {
         text-align: center;
     }
 }
