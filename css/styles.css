@@ -213,7 +213,7 @@ the website, in dark theme
 
 .whatsapp-float {
     position: fixed;
-    bottom: 25px;
+    bottom: 50px;
     right: 15px;
     z-index: 999;
     cursor: pointer;
@@ -225,8 +225,8 @@ the website, in dark theme
 }
 
 .whatsapp-icon {
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
 }
 
 
