@@ -211,6 +211,27 @@ the website, in dark theme
     /*For animation dark mode*/
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 999;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.5);
+}
+
+.whatsapp-icon {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: none !important;
+    max-height: none !important;
+    display: block;
+}
+
 
 /*=============== NAV ===============*/
 
@@ -474,6 +495,33 @@ img.home__img {}
     font-size: 1rem;
     color: var(--first-color);
     margin-top: .15rem;
+}
+
+
+/*=============== CARRUSEL ===============*/
+
+
+/* Ajuste automático para 3 imágenes */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(0);
+    }
+    36.66% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+    69.99% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }
 
 
