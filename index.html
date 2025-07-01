@@ -105,11 +105,11 @@
         <!--==================== ABOUT ====================-->
         <section class="about section container" id="about">
             <div class="about__container grid">
-                <img src="img/Lic.José.jpg" alt class="about__img">
+                <img src="img/Lic.José.jpg" alt class="about__img" id="aboutImage">
+                <!-- ID agregado -->
                 <div class="about__data">
                     <h2 class="section__title about__title">
-                        ¿QUIÉNES SOMOS Y
-                        <br>POR QUÉ ELEGIRNOS?
+                        ¿QUIÉNES SOMOS Y<br>POR QUÉ ELEGIRNOS?
                     </h2>
                     <p class="about__description" style="text-align: justify;">
                         En <strong>CONSTRUCTORA RADAC</strong>, llevamos más de [X] años transformando sueños en hogares y proyectos en realidades. Con un historial respaldado por [X]+ proyectos exitosos, nuestros clientes confían en nuestra experiencia,
@@ -525,6 +525,21 @@
 
         setInterval(changeImage, 3000); // Cambia cada 3 segundos
     </script>
+
+    <!--==================== MAIN JS ====================-->
+    <script>
+        const aboutImages = ["img/Lic.José.jpg", "img/Arq. Iván.jpg"]; // Añade aquí tus rutas
+        let aboutIndex = 0;
+        const aboutImgElement = document.getElementById('aboutImage');
+
+        function changeAboutImage() {
+            aboutIndex = (aboutIndex + 1) % aboutImages.length;
+            aboutImgElement.src = aboutImages[aboutIndex];
+        }
+
+        setInterval(changeAboutImage, 3000); // Cambia cada 3 segundos
+    </script>
+
     <!-- Tidio Chatbot -->
     <script src="js/main.js"></script>
     <script src="//code.tidio.co/xno5uohkbqokx9u3dryscvnkbqpytytn.js" async></script>
