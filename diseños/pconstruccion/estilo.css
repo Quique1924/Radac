@@ -915,7 +915,7 @@ the website, in dark theme
 }
 
 
-/*=============== PROCESOS DE VENTA ===============*/
+/*=============== STEPS ===============*/
 
 .steps__bg {
     background-color: var(--first-color);
@@ -928,107 +928,43 @@ the website, in dark theme
     padding-top: 1rem;
 }
 
-.sales-process {
-    background-color: var(--first-color);
-    padding: 3rem 2rem 2rem;
+.steps__title {
+    color: #FFF;
+}
+
+.steps__card {
+    background-color: var(--container-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
     border-radius: 1rem;
 }
 
-.sales-process__title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-}
-
-.sales-process__subtitle {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.sales-process__grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
+.steps__card-header {
+    display: flex;
     align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    /* centra horizontalmente */
 }
 
-.sales__text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.sales-process__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.sales-card {
-    background-color: #fefefe;
-    color: var(--text-color);
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.sales-card:hover {
-    transform: translateY(-5px);
-}
-
-.sales-card a {
-    color: var(--first-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.sales-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: var(--first-color);
-}
-
-.sales-card-number {
+.steps__card-number {
     background-color: #2f4f4f;
     color: white;
-    font-weight: bold;
     padding: 0.3rem 0.6rem;
+    font-weight: bold;
     border-radius: 0.2rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 767px) {
-    .sales-process__title,
-    .sales-process__intro,
-    .sales-process__post,
-    .sales-process__footer-white {
-        text-align: center;
-    }
-    .sales-process__cards {
-        grid-template-columns: 1fr;
-        /* una tarjeta por fila */
-    }
-    .sales-card {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 320px;
-    }
-    .sales-icon {
-        margin: 0 auto;
-    }
-    .sales-process__container {
-        padding: 0 1rem;
-    }
-    .sales-process__footer-white {
-        padding: 2rem 1rem;
-    }
+.steps__card-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.steps__card-description {
+    font-size: var(--small-font-size);
+}
+
+.steps__card:hover .steps__card-number {
+    transform: translateY(-.25rem);
 }
 
 
