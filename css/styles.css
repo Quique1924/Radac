@@ -213,7 +213,7 @@ the website, in dark theme
 
 .whatsapp-float {
     position: fixed;
-    bottom: 60px;
+    bottom: 0px;
     right: 22px;
     z-index: 2147483647;
     /* máximo valor posible */
