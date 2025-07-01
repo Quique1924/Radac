@@ -525,8 +525,37 @@
 
         setInterval(changeImage, 3000); // Cambia cada 3 segundos
     </script>
+    <!-- Tidio Chatbot -->
     <script src="js/main.js"></script>
     <script src="//code.tidio.co/xno5uohkbqokx9u3dryscvnkbqpytytn.js" async></script>
+
+    <style>
+        /* Contenedor del chatbot */
+        
+        #tidio-chat {
+            position: fixed !important;
+            bottom: 130px !important;
+            /* Ligeramente más bajo para alinear visualmente */
+            right: 15px !important;
+            z-index: 99999999 !important;
+            pointer-events: auto;
+        }
+        /* iframe del botón flotante del chatbot */
+        
+        #tidio-chat iframe {
+            width: 64px !important;
+            /* Tamaño similar al botón de WhatsApp */
+            height: 64px !important;
+            border-radius: 50% !important;
+            bottom: 0 !important;
+            /* Asegúrate que no tenga offset adicional */
+            right: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
+
+
 </body>
 
 </html>
