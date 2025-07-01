@@ -723,6 +723,33 @@ img.home__img {}
     margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 767px) {
+    .sales-process__title,
+    .sales-process__intro,
+    .sales-process__post,
+    .sales-process__footer-white {
+        text-align: center;
+    }
+    .sales-process__cards {
+        grid-template-columns: 1fr;
+        /* una tarjeta por fila */
+    }
+    .sales-card {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 320px;
+    }
+    .sales-icon {
+        margin: 0 auto;
+    }
+    .sales-process__container {
+        padding: 0 1rem;
+    }
+    .sales-process__footer-white {
+        padding: 2rem 1rem;
+    }
+}
+
 
 /*=============== PRODUCTS ===============*/
 
