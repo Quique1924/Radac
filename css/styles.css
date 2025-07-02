@@ -641,6 +641,17 @@ img.home__img {}
     color: #1a1a1a;
 }
 
+@media screen and (min-width: 768px) {
+    .valores-grid.unidos {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columnas fijas */
+    }
+    .valor-card.exito {
+        grid-column: 2 / 3;
+        /* Hace que 'ÉXITO' se centre en la segunda columna */
+    }
+}
+
 
 /*=============== SOLUCIONES CONSTRUCTIVAS 
 
@@ -847,6 +858,18 @@ img.home__img {}
     }
 }
 
+@media screen and (min-width: 768px) {
+    .sales-process__cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .sales-card.last-card-centered {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 320px;
+    }
+}
+
 
 /*=============== PRODUCTS ===============*/
 
@@ -911,6 +934,17 @@ img.home__img {}
 
 .product__card:hover .product__img {
     transform: translateY(-2rem);
+}
+
+@media screen and (min-width: 768px) {
+    .product__container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product__card:last-child {
+        grid-column: 2 / 3;
+    }
 }
 
 
