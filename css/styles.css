@@ -1037,8 +1037,28 @@ img.home__img {}
 
 /*=============== CONTACT ===============*/
 
+.contact__content-box {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0rem 2rem 2rem 2rem;
+    /* Menos espacio arriba */
+    margin-top: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
 .contact__container {
     row-gap: 3.5rem;
+}
+
+.contact__box {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.section__title {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .contact__data {
@@ -1075,6 +1095,7 @@ img.home__img {}
     position: relative;
     height: 3rem;
     border-bottom: 1px solid var(--text-color-light);
+    text-align: left;
 }
 
 .contact__input {
@@ -1109,7 +1130,7 @@ img.home__img {}
 }
 
 
-/*Input focus move up label*/
+/* Input focus - mueve la etiqueta hacia arriba */
 
 .contact__input:focus+.contact__label {
     top: -.75rem;
@@ -1119,7 +1140,7 @@ img.home__img {}
 }
 
 
-/*Input focus sticky top label*/
+/* Input lleno - mantiene la etiqueta arriba */
 
 .contact__input:not(:placeholder-shown).contact__input:not(:focus)+.contact__label {
     top: -.75rem;
@@ -1127,21 +1148,25 @@ img.home__img {}
     z-index: 10;
 }
 
+
+/* Responsive: móviles */
+
 @media screen and (max-width: 767px) {
-    /* Centrar el título en móviles */
     .contact__box .section__title {
         text-align: center;
     }
-    /* Centrar los labels del formulario */
     .contact__label {
         text-align: center;
         left: 50%;
         transform: translateX(-50%);
         width: max-content;
     }
-    /* Ajuste para inputs si hace falta que no empujen el label */
     .contact__content {
         text-align: center;
+    }
+    .button {
+        display: block;
+        margin: 1rem auto 0 auto;
     }
 }
 
@@ -1270,10 +1295,10 @@ img.home__img {}
 .footer__map.container {
     max-width: 960px;
     /* igual que el .footer__container */
-    margin: 2rem auto 1rem;
+    margin: 2rem auto 1.5rem;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
 }
 
 .footer__copy {
@@ -1293,6 +1318,11 @@ img.home__img {}
     }
     .footer__title {
         font-size: 1rem;
+    }
+    .footer__map.container {
+        padding: 0 1rem;
+        /* Añade margen interno lateral */
+        box-sizing: border-box;
     }
     .footer__map iframe {
         height: 250px;
