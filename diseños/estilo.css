@@ -10,15 +10,15 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --hue: 152;
-    --first-color: hsl(var(--hue), 24%, 32%);
-    --first-color-alt: hsl(var(--hue), 24%, 28%);
+    --first-color: #173d5c;
+    --first-color-alt: #2d68a3;
     --first-color-light: hsl(var(--hue), 24%, 66%);
     --first-color-lighten: hsl(var(--hue), 24%, 92%);
-    --title-color: hsl(var(--hue), 4%, 15%);
-    --text-color: hsl(var(--hue), 4%, 35%);
-    --text-color-light: hsl(var(--hue), 4%, 55%);
-    --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: #FFF;
+    --title-color: #000000;
+    --text-color: #212121;
+    --text-color-light: #6e6e6e;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
@@ -452,15 +452,15 @@ header h1 {
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --hue: 152;
-    --first-color: hsl(var(--hue), 24%, 32%);
-    --first-color-alt: hsl(var(--hue), 24%, 28%);
+    --first-color: #173d5c;
+    --first-color-alt: #2d68a3;
     --first-color-light: hsl(var(--hue), 24%, 66%);
     --first-color-lighten: hsl(var(--hue), 24%, 92%);
-    --title-color: hsl(var(--hue), 4%, 15%);
-    --text-color: hsl(var(--hue), 4%, 35%);
-    --text-color-light: hsl(var(--hue), 4%, 55%);
-    --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: #FFF;
+    --title-color: #000000;
+    --text-color: #212121;
+    --text-color-light: #6e6e6e;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
@@ -918,7 +918,7 @@ the website, in dark theme
 /*=============== PROCESOS DE VENTA ===============*/
 
 .steps__bg {
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighten);
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
 }
@@ -930,15 +930,14 @@ the website, in dark theme
 
 .sales-process {
     background-color: var(--first-color);
-    padding: 3rem 2rem 2rem;
-    border-radius: 1rem;
+    color: #fff;
+    padding: 4rem 0;
 }
 
 .sales-process__title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #fff;
 }
 
 .sales-process__subtitle {
@@ -983,7 +982,7 @@ the website, in dark theme
 }
 
 .sales-card a {
-    color: var(--first-color);
+    color: var(--first-color-alt);
     text-decoration: none;
     font-weight: bold;
 }
@@ -994,14 +993,8 @@ the website, in dark theme
     color: var(--first-color);
 }
 
-.sales-card-number {
-    background-color: #2f4f4f;
-    color: white;
-    font-weight: bold;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.2rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
+.sales-text-white {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -1028,6 +1021,18 @@ the website, in dark theme
     }
     .sales-process__footer-white {
         padding: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sales-process__cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .sales-card.last-card-centered {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 320px;
     }
 }
 
