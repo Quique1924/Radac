@@ -13,7 +13,7 @@
     --first-color: #173d5c;
     --first-color-alt: #2d68a3;
     --first-color-light: hsl(var(--hue), 24%, 66%);
-    --first-color-lighten: hsl(var(--hue), 24%, 92%);
+    --first-color-lighten: #d1ecf4;
     --title-color: #000000;
     --text-color: #212121;
     --text-color-light: #6e6e6e;
@@ -633,12 +633,12 @@ img.home__img {}
 }
 
 .valor-card.lealtad {
-    background-color: #d1ecf4;
+    background-color: #bae4f4;
     color: #1a1a1a;
 }
 
 .valor-card.exito {
-    background-color: #e3f6f5;
+    background-color: #d1ecf4;
     color: #1a1a1a;
 }
 
