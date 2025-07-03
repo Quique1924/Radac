@@ -25,17 +25,18 @@
                     </i> CONSTRUCTORA RADAC
                 </a>
 
+                <!-- Menú -->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../#v" class="nav__link active-link">Procesos de venta</a>
-                        </li>
+                        <li class="nav__item"><a href="../#v" class="nav__link active-link">Procesos de venta</a></li>
+                        <!-- más enlaces -->
                     </ul>
-
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
+
+                <!-- Botón hamburguesa -->
                 <div class="nav__btns">
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-line"></i>
@@ -43,86 +44,110 @@
                 </div>
             </nav>
         </header>
-        <main class="main">
-            <!--==================== STEPS ====================-->
-            <section class="steps section container">
-                <div class="steps__bg">
-                    <h2 class="section__title-center steps__title">
-                        PROCESO DE ADQUISICIÓN <br> DE LOTES
-                    </h2>
-                    <div class="steps__container grid">
-                        <!-- 1 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">01</div>
-                                <p> <strong> IDENTIFICAR UBICACIÓN DE INTERÉS </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
-                        </div>
 
-                        <!-- 2 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">02</div>
-                                <p> <strong> RECEPCIÓN DE INFORMACIÓN SOBRE EL PREDIO </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
-                        </div>
+        <script>
+            const navMenu = document.getElementById('nav-menu'),
+                navToggle = document.getElementById('nav-toggle'),
+                navClose = document.getElementById('nav-close');
 
-                        <!-- 3 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">03</div>
-                                <p> <strong> AGENDAR VISITA AL PREDIO </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
-                        </div>
+            // Mostrar menú
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.add('show-menu');
+                });
+            }
 
-                        <!-- 4 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">04</div>
-                                <p> <strong> APARTADO DEL LOTE DE INTERÉS </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
-                        </div>
+            // Ocultar menú
+            if (navClose) {
+                navClose.addEventListener('click', () => {
+                    navMenu.classList.remove('show-menu');
+                });
+            }
 
-                        <!-- 5 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">05</div>
-                                <p> <strong> FIRMA DE CONTRATO </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
+            // Cerrar al hacer click en un enlace
+            const navLink = document.querySelectorAll('.nav__link');
+            navLink.forEach(n => n.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            }));
+        </script>
+        <!--==================== STEPS ====================-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                    PROCESO DE ADQUISICIÓN <br> DE LOTES
+                </h2>
+                <div class="steps__container grid">
+                    <!-- 1 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">01</div>
+                            <p> <strong> IDENTIFICAR UBICACIÓN DE INTERÉS </strong> </p>
                         </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
+                    </div>
 
-                        <!-- 6 -->
-                        <div class="steps__card">
-                            <div class="steps__card-header" style="text-align: center;">
-                                <div class="steps__card-number">06</div>
-                                <p> <strong> ESCRITURACIÓN DEL LOTE </strong> </p>
-                            </div>
-                            <p class="steps__card-description" style="text-align: center;">
-                                <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
-                            </p>
+                    <!-- 2 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">02</div>
+                            <p> <strong> RECEPCIÓN DE INFORMACIÓN SOBRE EL PREDIO </strong> </p>
                         </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">03</div>
+                            <p> <strong> AGENDAR VISITA AL PREDIO </strong> </p>
+                        </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">04</div>
+                            <p> <strong> APARTADO DEL LOTE DE INTERÉS </strong> </p>
+                        </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">05</div>
+                            <p> <strong> FIRMA DE CONTRATO </strong> </p>
+                        </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="steps__card">
+                        <div class="steps__card-header" style="text-align: center;">
+                            <div class="steps__card-number">06</div>
+                            <p> <strong> ESCRITURACIÓN DEL LOTE </strong> </p>
+                        </div>
+                        <p class="steps__card-description" style="text-align: center;">
+                            <BR> ¿Buscas lotes, casa terminada, proyecto personalizado o una inversión? ¡Te podemos ayudar según tus metas!
+                        </p>
                     </div>
                 </div>
-                <p class="steps__footer" style="text-align: center; margin-top: 2rem; font-style: italic;">
-                    En RADAC, cada proyecto se construye con <strong>pasión</strong>, <strong>integridad</strong> y el compromiso de dejar un <strong>legado positivo</strong>.
-                </p>
-            </section>
-        </main>
+            </div>
+            <p class="steps__footer" style="text-align: center; margin-top: 2rem; font-style: italic;">
+                En RADAC, cada proyecto se construye con <strong>pasión</strong>, <strong>integridad</strong> y el compromiso de dejar un <strong>legado positivo</strong>.
+            </p>
+        </section>
         <script src="//code.tidio.co/vzgtmikijgecift9ducwr5ju4h7acf6y.js" async></script>
         <script src="app.js" async></script>
 </body>
