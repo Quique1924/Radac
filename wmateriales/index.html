@@ -20,7 +20,7 @@
         <!--==================== HOME ====================-->
         <section class="home" id="home">
             <div class="home__container container grid">
-                <img src="material.jpg" alt class="home__img">
+                <img src="e1.jpg" alt class="home__img">
 
                 <div class="home__data">
                     <h1 class="home__title">
@@ -36,8 +36,6 @@
                 </div>
 
         </section>
-
-
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="../index.html" class="nav__logo">
@@ -45,20 +43,52 @@
                     </i> CONSTRUCTORA RADAC
                 </a>
 
+                <!-- Menú -->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../#products1" class="nav__link active-link">Catálogo Inicial</a>
-                        </li>
-
+                        <li class="nav__item"><a href="../#products1" class="nav__link active-link">Catálogo Inicial</a></li>
+                        <!-- más enlaces -->
                     </ul>
-
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
+
+                <!-- Botón hamburguesa -->
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
             </nav>
         </header>
+
+        <script>
+            const navMenu = document.getElementById('nav-menu'),
+                navToggle = document.getElementById('nav-toggle'),
+                navClose = document.getElementById('nav-close');
+
+            // Mostrar menú
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.add('show-menu');
+                });
+            }
+
+            // Ocultar menú
+            if (navClose) {
+                navClose.addEventListener('click', () => {
+                    navMenu.classList.remove('show-menu');
+                });
+            }
+
+            // Cerrar al hacer click en un enlace
+            const navLink = document.querySelectorAll('.nav__link');
+            navLink.forEach(n => n.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            }));
+        </script>
+
         <section class="contenedor" id="products">
             <!-- Contenedor de elementos -->
             <div class="contenedor-items">
