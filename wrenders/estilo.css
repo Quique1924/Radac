@@ -10,15 +10,15 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --hue: 152;
-    --first-color: hsl(var(--hue), 24%, 32%);
-    --first-color-alt: hsl(var(--hue), 24%, 28%);
+    --first-color: #173d5c;
+    --first-color-alt: #2d68a3;
     --first-color-light: hsl(var(--hue), 24%, 66%);
-    --first-color-lighten: hsl(var(--hue), 24%, 92%);
-    --title-color: hsl(var(--hue), 4%, 15%);
-    --text-color: hsl(var(--hue), 4%, 35%);
-    --text-color-light: hsl(var(--hue), 4%, 55%);
-    --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: #FFF;
+    --first-color-lighten: #d1ecf4;
+    --title-color: #000000;
+    --text-color: #212121;
+    --text-color-light: #6e6e6e;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
@@ -452,15 +452,15 @@ header h1 {
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --hue: 152;
-    --first-color: hsl(var(--hue), 24%, 32%);
-    --first-color-alt: hsl(var(--hue), 24%, 28%);
+    --first-color: #173d5c;
+    --first-color-alt: #2d68a3;
     --first-color-light: hsl(var(--hue), 24%, 66%);
-    --first-color-lighten: hsl(var(--hue), 24%, 92%);
-    --title-color: hsl(var(--hue), 4%, 15%);
-    --text-color: hsl(var(--hue), 4%, 35%);
-    --text-color-light: hsl(var(--hue), 4%, 55%);
-    --body-color: hsl(var(--hue), 0%, 100%);
-    --container-color: #FFF;
+    --first-color-lighten: #d1ecf4;
+    --title-color: #000000;
+    --text-color: #212121;
+    --text-color-light: #6e6e6e;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
