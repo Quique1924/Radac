@@ -858,7 +858,7 @@ body {
 /*=============== PROCESOS DE VENTA ===============*/
 
 .steps__bg {
-    background-color: var(--first-color-lighten);
+    background-color: #f1f1f1;
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
 }
