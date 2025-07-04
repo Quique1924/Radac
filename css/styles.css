@@ -638,9 +638,10 @@ body {
 }
 
 .mission-vision__subtitle {
-    font-size: var(--small-font-size);
+    font-size: 1rem;
     color: var(--text-color);
-    margin-top: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .mission-vision__grid {
