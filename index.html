@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!--==================== FAVICON ====================-->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!-- Remixicon (íconos) -->
@@ -63,52 +65,46 @@
     <main class="main">
 
         <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="img/e1.jpg" alt class="home__img">
-                <div class="home__data">
+        <section class="home__wrapper">
+
+            <!-- Imagen a la izquierda -->
+            <div class="home__image-side">
+                <img src="img/empresa.jpg" alt="Edificación" class="home__img-full" />
+            </div>
+
+            <!-- Contenido a la derecha -->
+            <div class="home__content">
+                <!-- Título sobrepuesto -->
+                <div class="home__title-box">
+                    <BR>
+                    <BR>
+                    <BR>
                     <h1 class="home__title">
-                        CONSTRUYENDO
-                        <br>SUEÑOS
+                        ¿QUIERES <span class="home__title1">CONSTRUIR</span>
                     </h1>
-                    <p class="home__description" style="text-align: justify;">
-                        En <strong>CONSTRUCTORA RADAC</strong>, no solo edificamos casas, nos dedicamos a crear espacios donde cada rincón cuenta una historia; cada lote, cada proyecto, es una oportunidad más para cumplir sueños y transformar vidas.
-                        <br><br>Con <strong>pasión</strong>, <strong>integridad</strong> y sobre todo <strong>excelencia</strong>, construimos experiencias que superan cualquier expectativa desde la preconstrucción hasta la obra terminada.
-                        <br>
-                        <br><strong>TU FUTURO COMIENZA AQUÍ</strong>
-                        <br><br>¡Bienvenido a nuestra empresa <strong>RADAC</strong>, donde cada construcción es un paso hacia la magnificencia!
-                    </p>
-                    <a href="#ventas" class="button button--flex">
-                            Explorar
-                            <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
+                    <h1 class="home__title">
+                        EN <span class="home__title1">TLAXCALA</span>?
+                    </h1>
+                    <img src="img/logo.jpg" alt="">
+                    <h1 class="home__title">SOMOS TU
+                        <p class="home__title2">¡ MEJOR OPCIÓN !</p>
+                    </h1>
                 </div>
-
-                <div class="home__social">
-                    <span class="home__social-follow">
-                            Síguenos
-                        </span>
-
-                    <div class="home__social-links">
-                        <a href="https://www.facebook.com/share/1VAifA4PmD/?mibextid=wwXIfr" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/constructora.radac?igsh=aWdncTJoNWlqOGZ3" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="https://www.tiktok.com/@constructora.radac?_t=ZS-8xBBMiJA72Q&_r=1" target="_blank" class="home__social-link">
-                            <i class="ri-tiktok-fill"></i>
-                        </a>
-                    </div>
+                <h1 class="home__title">
+                    <span class="home__title3">Nuestras Redes Sociales</span>
+                </h1>
+                <div class="home__social-bar">
+                    <a href="#" class="home__social-icon"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="home__social-icon"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="home__social-icon"><i class="ri-tiktok-fill"></i></a>
                 </div>
             </div>
         </section>
+
         <!--==================== ABOUT ====================-->
         <section class="about section container" id="about">
             <div class="about__container grid">
-                <img src="img/Lic.José.jpg" alt class="about__img" id="aboutImage">
+                <img src="img/e1.jpg" alt class="about__img" id="aboutImage">
                 <!-- ID agregado -->
                 <div class="about__data">
                     <h2 class="section__title about__title">
@@ -584,7 +580,7 @@
             </a>-->
     <!--==================== MAIN JS ====================-->
     <script>
-        const images = ["img/e1.jpg", "img/e2.jpg", "img/e3.jpg"]; // Agrega las rutas de tus imágenes
+        const images = ["img/e1.jpg", "img/e2.jpg", "img/e3.jpg"]; // Agrega tus rutas aquí
         let currentIndex = 0;
         const imgElement = document.querySelector('.home__img');
 
@@ -596,9 +592,10 @@
         setInterval(changeImage, 3000); // Cambia cada 3 segundos
     </script>
 
+
     <!--==================== MAIN JS ====================-->
     <script>
-        const aboutImages = ["img/Lic.José.jpg", "img/Arq. Iván.jpg"]; // Añade aquí tus rutas
+        const aboutImages = ["img/e1.jpg", "img/e2.jpg", "img/e3.jpg"]; // Añade aquí tus rutas
         let aboutIndex = 0;
         const aboutImgElement = document.getElementById('aboutImage');
 
