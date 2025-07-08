@@ -208,21 +208,27 @@ the website, in dark theme
         display: block;
         pointer-events: auto;
     }
+    /*=============== GLOBAL RESETS ===============*/
+    
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*=============== HEADER FIJO ===============*/
     
     .header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
-        /* o reemplázalo por un color fijo si prefieres */
-        z-index: 1000;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        background-color: white;
     }
     
     .main {
-        margin-top: 80px;
-        /* Ajusta este valor si tu navbar es más alta o más baja */
+        padding-top: var(--header-height);
     }
     /*=============== NAV ===============*/
     
