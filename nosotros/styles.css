@@ -11,7 +11,7 @@
     /*Color mode HSL(hue, saturation, lightness)*/
     --hue: 152;
     --first-color: #0f6dbb;
-    --first-color-alt: #0f6dbb;
+    --first-color-alt: #57a3e1;
     --first-color-light: hsl(var(--hue), 24%, 66%);
     --first-color-lighten: #abcce7;
     --title-color: #000000;

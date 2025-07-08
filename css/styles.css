@@ -10,7 +10,7 @@
         /*Color mode HSL(hue, saturation, lightness)*/
         --hue: 152;
         --first-color: #0f6dbb;
-        --first-color-alt: #0f6dbb;
+        --first-color-alt: #57a3e1;
         --first-color-light: hsl(var(--hue), 24%, 66%);
         --first-color-lighten: #abcce7;
         --title-color: #000000;
@@ -829,33 +829,37 @@ the website, in dark theme
     .contact__content-box {
         border: 1px solid #ccc;
         border-radius: 1rem;
-        padding: 0rem 2rem 2rem 2rem;
-        /* Menos espacio arriba */
+        padding: 0 2rem 2rem;
         margin-top: 0;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         background-color: #fff;
     }
     
     .contact__container {
-        row-gap: 3.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3.5rem;
+        align-items: start;
     }
+    /* Centrar el contenido de la parte izquierda */
     
     .contact__box {
-        margin-top: 0;
-        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .section__title {
         font-size: 2.5rem;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
     }
     
     .section__title1 {
         font-size: 2.5rem;
         font-weight: bold;
         color: var(--first-color);
-        text-align: center;
     }
     
     .contact__data {
@@ -886,6 +890,11 @@ the website, in dark theme
         display: grid;
         row-gap: 2rem;
         margin-bottom: var(--mb-2-5);
+    }
+    
+    form .button {
+        display: block;
+        margin: 2rem auto 0 auto;
     }
     
     .contact__content {
@@ -940,17 +949,40 @@ the website, in dark theme
         font-size: var(--smaller-font-size);
         z-index: 10;
     }
-    /* Responsive: móviles */
+    /* Botón de llamada */
+    
+    .contact__call-button {
+        display: inline-block;
+        background-color: var(--first-color);
+        color: white;
+        padding: 0.6rem 1.5rem;
+        border-radius: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        margin-top: 0.5rem;
+    }
+    
+    .contact__call-button:hover {
+        background-color: var(--first-color-alt);
+    }
+    /*=============== Responsive ==================*/
     
     @media screen and (max-width: 767px) {
-        .contact__box .section__title {
+        .contact__container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .contact__box .section__title,
+        .section__title1 {
             text-align: center;
         }
         .contact__label {
-            text-align: center;
             left: 50%;
             transform: translateX(-50%);
             width: max-content;
+            text-align: center;
         }
         .contact__content {
             text-align: center;
@@ -958,6 +990,13 @@ the website, in dark theme
         .button {
             display: block;
             margin: 1rem auto 0 auto;
+        }
+        .contact__description {
+            justify-content: center;
+        }
+        .contact__call-button {
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     /*=============== FOOTER ===============*/
