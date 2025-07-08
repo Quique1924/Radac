@@ -337,6 +337,33 @@ the website, in dark theme
     }
     /*=============== HOME HERO ==================*/
     
+    .home__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .home__title1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--first-color);
+        text-align: center;
+    }
+    
+    .home__title2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--first-color);
+        text-align: center;
+    }
+    
+    .home__title3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+    }
+    
     .home__wrapper {
         position: relative;
         width: 100%;
@@ -819,8 +846,16 @@ the website, in dark theme
     }
     
     .section__title {
-        margin-top: 0;
-        padding-top: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .section__title1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--first-color);
+        text-align: center;
     }
     
     .contact__data {
